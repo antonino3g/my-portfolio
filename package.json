@@ -1,28 +1,30 @@
 {
-  "name": "antoninodev-homepage",
+  "name": "portfolio_antonino3g",
   "version": "1.0.0",
-  "description": "Antonino's Website",
-  "repository": "https://github.com/antonino3g/my-portfolio.git",
-  "author": "Antonino Praxedes <antonino.praxedes@gmail.com>",
-  "license": "MIT",
+  "description": "My professional portfolio.",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
-    "build": "next build",
-    "prettier": "prettier -write .",
-    "lint": "next lint"
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.8.6",
-    "@emotion/react": "^11.8.2",
-    "@emotion/styled": "^11.8.1",
-    "framer-motion": "^6.2.8",
-    "next": "^12.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "next": "10.2.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "5.3.0",
+    "styled-normalize": "8.0.7",
+    "react-icons": "4.2.0"
   },
-  "devDependencies": {
-    "eslint": "^8.10.0",
-    "eslint-config-next": "^12.1.0",
-    "prettier": "^2.5.1"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonino3g/my-portfolio.git"
+  },
+  "keywords": [],
+  "author": "Antonino Praxedes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonino3g/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/antonino3g/my-portfolio#readme"
 }
