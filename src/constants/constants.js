@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: 'MERN Memories',
-    description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-      image: '/images/1.png',
-      tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    title: 'Covid-19 Tracker App',
+    description: "Aplicativo que retona os casos de COVID-19 no aspecto Global e por Países, através do consumo de uma API externa",
+      image: '/images/covid_app.png',
+      tags: ['Flutter', 'Dart', 'https'],
+    source: 'https://github.com/antonino3g/covid19-tracker-app',
+    visit: 'https://github.com/antonino3g/covid19-tracker-app',
     id: 0,
   },
   {
@@ -43,4 +43,10 @@ export const TimeLineData = [
   { year: 2019, text: 'Founded JavaScript Mastery', },
   { year: 2020, text: 'Shared my projects with the world', },
   { year: 2021, text: 'Started my own platform', },
+];
+
+export const profilePic = [
+  {
+    image: '/images/profile.jpg',
+  }
 ];
