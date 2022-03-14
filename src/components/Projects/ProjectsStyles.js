@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Img = styled.img`
-  width:100%;
-  height:100%;
+  width:40%;
+  height:40%;
   object-fit: cover;
   overflow: hidden;
 `
@@ -78,7 +78,6 @@ export const CardInfo = styled.p`
   
 }
 `;
-
 
 export const UtilityList = styled.ul`
   list-style-type: none;

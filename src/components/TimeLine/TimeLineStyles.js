@@ -152,3 +152,39 @@ export const CarouselButtonDot = styled.div`
   width: 3px;
   height: 3px;
 `
+// Profile Pic
+export const Img = styled.img`
+  diplay: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0px 0 50px;
+  height: 380px;
+  width: 380px;
+  border: 1px solid black;
+  border-radius: 50%;
+
+`
+
+export const GridContainer = styled.section`
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+padding: 3rem;
+place-items: center;
+column-gap: 2rem;
+row-gap: 3rem;
+@media ${(props) => props.theme.breakpoints.sm} {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+`
+// export const ProfilePicture = styled.div`
+//   height: 92%;
+//   width: 92%;
+//   background-image: url(${profile});
+//   background-size: cover;
+//   border-radius: 50%;
+// }
+// `

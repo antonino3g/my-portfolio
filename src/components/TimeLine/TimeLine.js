@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
+// import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
+import { BlogCard, GridContainer, Img } from '../../components/TimeLine/TimeLineStyles';
+import { TimeLineData, profilePic } from '../../constants/constants';
+
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { TimeLineData } from '../../constants/constants';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -43,9 +45,18 @@ const Timeline = () => {
   // }, []);
 
   return (
-    <div>
-      Timeline
-    </div>
+    <Section id='about'>
+      <SectionTitle>Sobre</SectionTitle>
+      <SectionText>
+        Desenvolvedor Mobile, formado pelo Instituto Federal de Roraima e Pós Graduado em Desenvolvimento em Aplicativos Móveis pela UniBF.
+        Sou apaixonado por tecnologia e um entusiasta GNU/Linux e do conhecimento livre.
+      </SectionText>
+      <GridContainer>
+        {profilePic.map(({image}) => (
+            <Img src={image} />
+          ))}
+       </GridContainer>
+    </Section>
   );
 };
 
